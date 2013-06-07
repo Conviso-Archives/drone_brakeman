@@ -1,0 +1,5 @@
+config.yml
+log/
+input/
+*.zip
+test/sample
