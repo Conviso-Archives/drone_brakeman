@@ -18,8 +18,8 @@ module Parse
      
       private
       def __extract_json(json_file)
-        fd = File.open(json_file)
-        doc = JSON.load(fd)
+        json = File.read(json_file)
+        doc = JSON.parse(json)
         
         output = {}
         output[:issues] = []
